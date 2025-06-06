@@ -1,0 +1,19 @@
+.create-posion--item {
+  height: 0;
+}
+.create-posion--item.show{
+  height: 0;
+}
+
+.position-item {
+  height: 0;
+}
+.position-item.show {
+  height: calc(57px + 32px);
+}
+.item {
+  opacity: 0;
+}
+.item.show {
+  opacity: 1;
+}

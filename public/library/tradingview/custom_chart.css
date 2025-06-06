@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+html .chart-page {
+    background-color: transparent !important;
+    font-family: JetBrains Mono !important;
+}
+.button-5-QHyx-s .icon-5-QHyx-s svg {
+    width: 24px !important;
+    height: 24px !important;
+}
+.noWrap-1WIwNaDF .series-1WIwNaDF.item-1WIwNaDF,
+.series-1WIwNaDF .titleWrapper-1WIwNaDF,
+.sources-1WIwNaDF .item-1WIwNaDF {
+    font-size: 10px !important;
+}
+.series-1WIwNaDF .valuesWrapper-1WIwNaDF {
+    display: flex !important;
+    align-items: center !important;
+    border: none !important;
+}
+
+.tv-circle-logo {
+    display: none !important;
+}
+
+.chart-gui-wrapper canvas:first-child,
+.price-axis-container .price-axis canvas:first-child,
+.time-axis canvas:first-child,
+.price-axis-container .apply-common-tooltip canvas:first-child {
+    background-color: #100f14 !important;
+}

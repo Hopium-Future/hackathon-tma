@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  na3-tma:
+    image: na3-tma
+    build: .
+    restart: always
+    ports:
+      - '127.0.0.1:${PORT:-6001}:80'
+    networks:
+      - na3_network
+
+networks:
+  na3_network:
+    external: true

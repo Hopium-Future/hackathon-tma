@@ -1,0 +1,11 @@
+import { BaseIcon, IconProps } from ".";
+
+const ExternalLinkIcon = ({ ...props }: IconProps) => {
+    return (
+        <BaseIcon {...props} viewBox="0 0 16 16" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 7.33333L14 3.33333L14 2H12.6667H8.66667V3.33333H11.3333V4.66667H12.6667L12.6667 7.33333H14ZM7.33333 3.33333H3.33333H2V4.66667V12.6667V14H3.33333L11.3333 14L12.6667 14L12.6667 8.66667H11.3333V12.6667H3.33333V4.66667H7.33333V3.33333ZM6 8.66667H7.33333V10H6V8.66667ZM8.66667 7.33333H7.33333V8.66667H8.66667V7.33333ZM8.66667 6H10V7.33333H8.66667V6ZM11.3333 4.66667H10V6H11.3333V4.66667Z" fill="currentColor"/>
+        </BaseIcon>
+    );
+};
+
+export default ExternalLinkIcon;

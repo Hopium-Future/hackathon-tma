@@ -1,0 +1,107 @@
+/* modal config */
+#modal-container {
+    position: fixed;
+    top: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: -20px;
+    left: 0;
+    transform: scale(0);
+    z-index: 100;
+}
+
+#modal-container.two {
+    transform: scale(1);
+}
+
+#modal-container.two .modal-background {
+    height: 100vh;
+    background: rgba(15, 15, 15, 0.8);
+    animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.two .modal-background .modal {
+    opacity: 0;
+    animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+/* START content modal animation IN */
+.two .modal-background .content .textbox {
+    animation: scaleUp 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.two .modal-background .content .logo {
+    opacity: 0;
+    animation: scaleUp 1.1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.two .modal-background .content .title {
+    opacity: 0;
+    animation: scaleUp 1.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.two .modal-background .content .button {
+    opacity: 0;
+    animation: fadeIn 1.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.two .modal-background .content .result {
+    opacity: 0;
+    animation: scaleUp 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.two .modal-background .content .information {
+    opacity: 0;
+    animation: scaleUp 1.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+/* END content modal animation IN */
+
+.two + .content {
+    animation: scaleBack 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.out {
+    animation: quickScaleDown 0s 0.5s linear forwards;
+}
+
+#modal-container.out .modal-background {
+    animation: fadeOut 2.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.out .modal-background .modal {
+    animation: scaleDown 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+/* START content modal animation OUT */
+.out .modal-background .content .textbox {
+    animation: scaleDown 3.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.out .modal-background .content .logo {
+    animation: scaleDown 3.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.out .modal-background .content .title {
+    animation: scaleDown 3.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.out .modal-background .content .buttn {
+    animation: fadeOut 3.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.out .modal-background .content .result {
+    opacity: 0;
+    animation: scaleDown 3.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.out .modal-background .content .information {
+    animation: scaleDown 3.1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+/* END content modal animation OUT */
+
+.out + .content {
+    animation: scaleForward 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}

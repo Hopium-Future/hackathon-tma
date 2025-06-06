@@ -1,0 +1,141 @@
+.bg-btc-price {
+  background-image: url(/images/home/btc_price.png);
+  width: 220px;
+  height: 80px;
+
+  @screen tall {
+    background-image: url('/images/home/btc_price_tall.png');
+    width: 250px;
+    height: 90px;
+  }
+}
+
+.home-bg-1 {
+  background-image: url(/images/home/bg_1.png);
+  aspect-ratio: 585 / 567;
+
+  @screen tall {
+    background-image: url('/images/home/bg_1_tall.png');
+    aspect-ratio: 585 / 642;
+  }
+}
+
+.home-bg-1__dark {
+  background-image: url(/images/home/bg_1_dark.png);
+  aspect-ratio: 585 / 567;
+
+  @screen tall {
+    background-image: url('/images/home/bg_1_tall_dark.png');
+    aspect-ratio: 585 / 642;
+  }
+}
+
+.home-bg-1__dark--pump {
+  background-image: url(/images/home/bg_dark/bg_1_dark_pump.gif);
+  aspect-ratio: 585 / 567;
+
+  @screen tall {
+    background-image: url('/images/home/bg_dark/bg_1_dark_pump_tall.gif');
+    aspect-ratio: 585 / 642;
+  }
+}
+
+.home-bg-1__dark--dump {
+  background-image: url(/images/home/bg_dark/bg_1_dark_dump.gif);
+  aspect-ratio: 585 / 567;
+
+  @screen tall {
+    background-image: url('/images/home/bg_dark/bg_1_dark_dump_tall.gif');
+    aspect-ratio: 585 / 642;
+  }
+}
+
+.home-bg-2 {
+  background-image: url(/images/home/bg_2.png);
+}
+
+.home-bg-2__dark {
+  background-image: url(/images/home/bg_2_dark.png);
+}
+
+.home-bg-balance {
+  background-image: url(/images/home/bg_balance.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 56px;
+  height: 56px;
+  background-size: 300px 56px;
+
+  @screen tall {
+    background-image: url(/images/home/bg_balance_tall.png);
+    min-height: 60px;
+    height: 60px;
+    background-size: 324px 60px;
+  }
+}
+
+/* history button */
+.bg-action-button {
+  background-image: url(/images/home/btn-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* min-height: 56px;
+  height: 56px; */
+  background-size: 36px 36px;
+}
+
+/* textbox smoke */
+.textbox-smoke-bg {
+  background-image: url(/images/home/result_modal/textbox.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* min-height: 56px;
+  height: 56px; */
+  background-size: 88px 76px;
+}
+
+/* box shadow 3d */
+.box-shadow-lb {
+  box-shadow: 0.5rem 0.5rem rgba(43, 43, 55, 0.5);
+}
+
+/* button 3d pixel art  */
+.pushable {
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 2px;
+  height: 42.35px;
+}
+
+.front {
+  padding-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 36px;
+  transform: translateY(-3px);
+
+  /* @screen tall {
+    height: 42.35px;
+    transform: translateY(-1px);
+  } */
+}
+
+/* config 3d button  */
+.button-3d__center {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* @screen tall {
+    top: 28%;
+  } */
+}
+
+/* Counter Speed Odo */
+.speedo-digits {
+  transition: 1s all;
+  transition-timing-function: cubic-bezier(0, 0.99, 1, 1.01);
+}
+
+
+

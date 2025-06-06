@@ -1,0 +1,48 @@
+@keyframes enter {
+    0% {
+        opacity: var(--tw-enter-opacity, 1);
+        transform: translate3d(var(--tw-enter-translate-x, 0), var(--tw-enter-translate-y, 0), 0)
+            scale3d(var(--tw-enter-scale, 1), var(--tw-enter-scale, 1), var(--tw-enter-scale, 1)) rotate(var(--tw-enter-rotate, 0));
+    }
+}
+.DialogOverlay {
+    @apply fixed inset-0 bg-[rgba(0,0,0,.8)];
+}
+.DialogOverlay[data-state='open'],
+.DialogContent[data-state='open'] {
+    --tw-enter-opacity: 1;
+    animation: enter 300ms ease-out;
+}
+
+.DialogContent {
+    position: fixed;
+    &:focus {
+        outline: none;
+    }
+    .container {
+        position: relative;
+        @apply bg-background-2;
+        // background-image: linear-gradient(to top, #08000f 41%, #33166d 148%);
+    }
+}
+
+.DialogContent[data-state='open'] {
+    --tw-enter-translate-x: 0%;
+    --tw-enter-translate-y: 100%;
+}
+.DialogContent.pending_content {
+    pointer-events: auto;
+    transform: translateY(100%);
+    transition: transform 300ms ease-out;
+}
+.DialogOverlay.pending_overlay {
+    pointer-events: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
+
+.DialogOverlay[data-state='closed'],
+.DialogContent[data-state='closed'] {
+    --tw-enter-opacity: 0;
+    animation: enter 300ms ease-out;
+}

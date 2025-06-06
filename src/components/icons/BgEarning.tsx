@@ -1,0 +1,30 @@
+import { BaseIcon, IconProps } from '.';
+
+const BgEarning = ({ ...props }: IconProps) => {
+    return (
+        <BaseIcon {...props} viewBox={`0 0 175 47`} fill="none">
+            <path d="M2 2V1H174V2H175V45H174V46H2V45H1V2H2Z" fill="#0C1712" />
+            <path opacity="0.08" d="M2 2V1H173V2H174V45H173V46H2V45H1V2H2Z" fill="url(#paint0_linear_8168_115764)" />
+            <rect y="2" width="1" height="43" fill="#113F21" />
+            <rect width="1" height="43" transform="matrix(-1 0 0 1 175 2)" fill="#113F21" />
+            <rect x="2" width="171" height="1" fill="#113F21" />
+            <rect x="1" y="1" width="1" height="1" fill="#113F21" />
+            <rect x="4" y="4" width="1" height="1" fill="#113F21" />
+            <rect x="170" y="4" width="1" height="1" fill="#113F21" />
+            <rect x="173" y="1" width="1" height="1" fill="#113F21" />
+            <rect x="4" y="42" width="1" height="1" fill="#113F21" />
+            <rect x="170" y="42" width="1" height="1" fill="#113F21" />
+            <rect width="1" height="1" transform="matrix(-1 0 0 1 174 45)" fill="#113F21" />
+            <rect x="1" y="45" width="1" height="1" fill="#113F21" />
+            <rect x="2" y="46" width="171" height="1" fill="#113F21" />
+            <defs>
+                <linearGradient id="paint0_linear_8168_115764" x1="1" y1="1" x2="365" y2="27" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#1F7328" stopOpacity="0" />
+                    <stop offset="1" stopColor="#3BD95E" />
+                </linearGradient>
+            </defs>
+        </BaseIcon>
+    );
+};
+
+export default BgEarning;
